@@ -26,12 +26,19 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "array",
+    "arrayofarrays",
+    "is",
+    "isarrayarray"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/array-array/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-array": "^1.0.3"
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",

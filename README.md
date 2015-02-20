@@ -1,4 +1,4 @@
-array-array
+Array of Arrays
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,36 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-array-array' );
+var isArrayArray = require( 'validate.io-array-array' );
 ```
 
-#### foo( value )
+#### isArrayArray( value )
 
-What does this function do?
+Validates if a `value` is an `array` of `arrays`.
+
+``` javascript
+var value = [[],[]];
+
+var bool = isArrayArray( value );
+// returns true
+```
+
+__Note__: the method will return `false` for an empty `array`.
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-array-array' );
+var isArrayArray = require( 'validate.io-array-array' );
+
+console.log( isArrayArray( [[],[]] ) );
+// returns true
+
+console.log( isArrayArray( [] ) );
+// returns false
+
+console.log( isArrayArray( [[],{},[]] ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,
